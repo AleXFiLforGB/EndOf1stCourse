@@ -10,7 +10,7 @@ for (int i = 0; i< length; i++)
  void PrintArray (int [] arr)
  {
      for (int i = 0; i < arr.Length; i++)
-     {System.Console.Write($"{arr[i]} ");}}
+     {Console.Write($"{arr[i]} ");}}
  
  int [] CheckEvenElements (int[] a)
  { int[] b = new int [a.Length];
@@ -20,3 +20,10 @@ for (int i = 0; i< length; i++)
     {b[j]= a[i];j++;}}
 Array.Resize(ref b,j);
 return b;}
+int [] A =FstArray(10, 0, 100);
+int [] B =CheckEvenElements (A);
+Console.WriteLine($"Элементы массива А");
+PrintArray(A);
+Console.WriteLine();
+Console.WriteLine($"Элементы массива B");
+PrintArray(B);
